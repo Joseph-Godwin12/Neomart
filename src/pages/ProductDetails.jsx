@@ -1,8 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function ProductDetails() {
   const { id } = useParams();
+  const navigate = useNavigate(); // 👈 For back navigation
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -27,6 +29,14 @@ export default function ProductDetails() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      {/* Back Button */}
+      <button
+        onClick={() => navigate(-1)} // 👈 Go back one page
+        className="flex items-center text-blue-600 hover:underline"
+      >
+        <FaArrowLeft className="mr-2" />
+      </button>
+
       <div className="flex flex-col md:flex-row gap-10">
         <img
           src={product.thumbnail}

@@ -64,7 +64,6 @@ export default function Home() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            // Overlay for gradient effect
             position: "relative",
         }}
     >

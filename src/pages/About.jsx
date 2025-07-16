@@ -7,10 +7,10 @@ import about from "../assets/cart.jpg";
 
 export default function About() {
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="bg-gray-50 text-gray-800 overflow-hidden">
       {/* Hero Banner - Styled Like Home Page */}
       <motion.section
-        className="relative bg-gradient-to-br from-indigo-700 via-blue-700 to-purple-700 text-white overflow-hidden py-48 px-6 md:flex items-center justify-center text-center"
+        className="relative bg-gradient-to-br from-indigo-700 via-blue-700 to-purple-700 text-white overflow-hidden py-60 px-6 md:flex items-center justify-center text-center"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
