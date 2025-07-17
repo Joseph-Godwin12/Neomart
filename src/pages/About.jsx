@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import joseph from "../assets/joseph.jpg";
 import about from "../assets/cart.jpg";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -158,6 +158,8 @@ export default function About() {
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-3">Ready to explore NeoMart?</h3>
           <p className="mb-6 text-gray-600">Join thousands of happy shoppers today and get amazing deals.</p>
+         <Link
+          to="/">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -165,6 +167,7 @@ export default function About() {
           >
             Shop Now
           </motion.button>
+          </Link>
         </div>
       </div>
     </div>
